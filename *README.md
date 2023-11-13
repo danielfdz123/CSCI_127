@@ -6,6 +6,7 @@ ________________________________________________________________________________
 Coding Assignment overview: 
 
   (pg1-6): Getting familiar with the ***print function, turtle library, for loops, variables,*** and ***strings*** inorder to perform simple tasks that either display text on the screen, or draw simple shapes on screen 
+  
   (pg7-9): Getting familiar with simple ***string commands**** that change the strings into all uppercase, lowercase, or even converting each character into their corresponding ASCII code equivalence.
   (pg10): Using for loops to add certain types of paterns to out shapes.
   (pg11-12): Getting familiar with ***colors*** in the coding world, like referring them by ***name, hexadecimal, or in RGB (255 code)***. Assignments 11 and 12 show how we can see the different shades of blue (with some adjustments we can make this work for other colors too). 
