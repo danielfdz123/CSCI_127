@@ -25,4 +25,26 @@ Coding Assignment overview:
   
   (pg19): Using input(), the '/' and '%' operator, we will prompt the user to input any number of hours, which will return the amount of days/hours it's equivalent too.
   
-  (pg20): 
+  (pg20): This program is a kilometer to miles converter
+
+  (pg21): This program counts the amount of white pizels within an image, which resembles snow, and prints out the amount of white pixels within the image
+
+  (pg22): Simple logic gate equation with 3 inputs
+
+  (pg23): Demonstrating a simple NAND circuit
+
+  (pg24): This program prompts the user 
+
+  (pg25): This program prompts the user to enter a list of nouns, and then will print out the ratio of plural nouns to singular nouns
+
+  (pg26): Demonstrating a NOR circuit
+
+  (pg27): This program reads in a file and outputs a graph that shows the change in population overtime in a specific nyc borough, which is determined by the user
+
+  (pg28): This program reads in a file and outputs the maximum and mean of a borough, which is determined by the user
+
+  (pg29): Printing "Hello, World!" using unix commands
+
+  (pg30): Creating my github account and showing my username
+
+  (pg31): 
