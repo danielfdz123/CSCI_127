@@ -5,8 +5,6 @@ Majority of these coding labs are using Python along with a select few of its li
 ____________________________________________________________________________________________________________________________________________________________
 Coding Assignment overview: 
 
-**Learning the basics of Python**
-
   (pg1-6): Getting familiar with the ***print function, turtle library, for loops, variables,*** and ***strings*** inorder to perform simple tasks that either display text on the screen, or draw simple shapes on screen.
   
   (pg7-9): Getting familiar with simple ***string commands**** that change the strings into all uppercase, lowercase, or even converting each character into their corresponding ASCII code equivalence.
@@ -88,8 +86,6 @@ Coding Assignment overview:
   (pg49): Using MIPS, this programs counts by 5 starting from 0, all the way up to 50.
 
   (pg50): Using unix commands, this proogram counts the amount of '.py' files there are in a folder.
-
-**Starting to learn C++**
 
   (pg51): This C++ program prints "Hello, World!" and "Hello, C++".
 
