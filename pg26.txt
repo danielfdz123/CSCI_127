@@ -1,0 +1,6 @@
+#Daniel Andres Fernandez
+#daniel.fernandez16@myhunter.cuny.edu
+#March 5, 2022
+#Computes NAND of two inputs, using only AND, OR, and NOT gates
+
+out= not(in1 or in2)

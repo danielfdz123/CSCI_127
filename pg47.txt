@@ -1,0 +1,10 @@
+#Daniel Andres Fernandez
+#daniel.fernandez16@myhunter.cuny.edu
+#April 17, 2022
+#This program makes directories for a project
+
+mkdir projectFiles
+cd projectFiles
+mkdir source
+mkdir data
+mkdir results

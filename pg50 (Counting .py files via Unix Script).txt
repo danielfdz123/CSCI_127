@@ -1,7 +1,0 @@
-#Daniel Andres Fernandez
-#daniel.fernandez16@myhunter.cuny.edu
-#April 17, 2022
-#This program counts the amount of '.py' files there are in a folder
-
-#program 44 counts .py
-ls -l | grep ".py"
