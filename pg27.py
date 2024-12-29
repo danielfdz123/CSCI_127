@@ -8,12 +8,11 @@ import pandas as pd
 
 pop = pd.read_csv('nycHistPop.csv',skiprows=5)      #Reads in information
 boro = input("Enter borough name: ")                #User inputs borough name
-out = input("Enter output file name: ")             #User inputs name out output file
 pop['Fraction'] = pop[boro]/pop['Total']            #Gathers fraction of borough pop/total pop
 
 pop.plot(x = 'Year', y = 'Fraction')                #Plots the fraction in a graph
 fig = plt.gcf()
-fig.savefig(out)                                    #Saves the graph under the name that the user inputed as 'out'
+fig.savefig("HistPopGraph")                         #Saves the graph under the name that the user inputed as 'out'
 
-plt.show()                                          #Shows grapha
+plt.show()                                          #Shows graph
 plt.imshow()

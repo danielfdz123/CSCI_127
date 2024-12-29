@@ -1,25 +1,25 @@
 #Danie Andres Fernandez
 #daniel.fernandez16@myhunter.cuny.edu
 #April 7, 2022
-#This program creates a map and marks the current location and closest point
+#This program creates a map and marks the current location and closest CUNY
 
 import folium
 import pandas as pd
 
 def getData():                    
-    name = input('Enter CSV file name: ')
+    name = 'CUNYcampuses.csv'
     df = pd.read_csv(name)
 
     return(df)
 
 def getColumnNames():               
-    latName = input ("Enter column name for latitude: ")
-    lonName = input ("Enter column name for longtitude: ")
+    latName = 'Latitude'
+    lonName = 'Longitude'
     return(latName,lonName)
 
 def getLocale():
-    lat = input ("Enter current latitude: ")
-    lon = input ("Enter current longtitude: ")
+    lat = float(input ("Enter current latitude: "))
+    lon = float(input ("Enter current longtitude: "))
     return(lat, lon)
 
 def computeDist(x1,y1,x2,y2):
@@ -37,11 +37,11 @@ def markAndFindClosest(cMap,df,latCol,lonCol,cLat,cLon):
      df['Dist'] = df[[latCol,lonCol]].apply(lambda row: computeDist(*row,cLat,cLon), axis=1)
      minRow = df[df['Dist'] == df['Dist'].min()]
      
-     folium.Marker(location=[float(minRow[latCol]),float(minRow[lonCol])],popup="Closest").add_to(cMap)
+     folium.Marker(location=[float(minRow[latCol]),float(minRow[lonCol])],popup="Closest CUNY Campus").add_to(cMap)
      folium.Marker(location=[cLat,cLon],popup="You Are Here",icon=folium.Icon(color='red')).add_to(cMap)
      
 def writeMap(cMap):
-     outF = input('Enter output file: ')
+     outF = 'closestPoint.html'
      cMap.save(outfile=outF)
 
 def main():
@@ -52,7 +52,6 @@ def main():
      dotAllPoints(cityMap,dataF,latColName,lonColName)
      markAndFindClosest(cityMap,dataF,latColName,lonColName,lat,lon)
      writeMap(cityMap)
-
 
 if __name__ == "__main__":
      main()

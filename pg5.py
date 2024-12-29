@@ -10,3 +10,4 @@ for i in range(5):
     beef.forward(100)
     beef.left(144)
     
+turtle.done()   # Allows turtle graphic window to not close on its own

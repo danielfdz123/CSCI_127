@@ -8,3 +8,5 @@ import turtle
 for i in range(8):
     turtle.forward(100)
     turtle.left(360/8)
+
+turtle.done()   # Allows turtle graphic window to not close on its own

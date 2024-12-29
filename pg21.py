@@ -1,11 +1,10 @@
 #Daniel Andres Fernandez
 #daniel.fernandez16@myhunter.cuny.edu
 #March 5, 2022
-#This program prints the amount of white pixels, which are meant to represent snow
+#This program reads an image and counts the amount of white pixels, which are meant to represent snow
 
 import matplotlib.pyplot as plt
 import numpy as np
-
 
 ca = plt.imread('CaliforniaDrought_02232011_md.png')   #Read in image
 countSnow = 0                 #Number of pixels that are almost white

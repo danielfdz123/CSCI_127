@@ -4,7 +4,7 @@
 #This program askes the user for 5 integers, which will be the degress the turtle willturn to the left by
 
 import turtle
-gi = turtle.Turtle()
+beef = turtle.Turtle()
 
 a = int(input("Enter a number: "))
 b = int(input("Enter a number: "))
@@ -13,5 +13,5 @@ d = int(input("Enter a number: "))
 e = int(input("Enter a number: "))
 
 for i in range(a, b, c, d, e):
-    gi.forward(100)
-    gi.left(i)
+    beef.forward(100)
+    beef.left(i)

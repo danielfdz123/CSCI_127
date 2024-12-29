@@ -6,15 +6,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-input_file=input("Enter name of input file:")
-out = input("Enter name of output file:")
-
+input_file='DHS_Daily_Report.csv'
 pop=pd.read_csv(input_file)
 
 pop["Fraction Children"] = pop["Total Children in Shelter"]/pop["Total Individuals in Shelter"]
-
 pop.plot(x="Date of Census",y="Fraction Children")
 
 fig=plt.gcf()
-fig.savefig(out)
-
+fig.savefig('DHS_GraphReport')
+plt.show()

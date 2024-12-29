@@ -3,8 +3,8 @@
 #March 10, 2022
 #This program organizes a list of names by last name, first name
 
-names =input("Enter a list of names (Ex: Doe, John; Doe Jane): ")        #Creates variable
-namelist = names.split("; ")                                             #Splits ; from list of names
+fullNames = input("Enter a list of names (Ex: Doe, John; Doe, Jane): ")        #Creates variable
+namelist = fullNames.split("; ")                                             #Splits ; from list of names
 
 for i in namelist:
     beef = i.split(", ")                                                 #Splits , from first/last names

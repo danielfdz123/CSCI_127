@@ -39,8 +39,7 @@ def main():
     tess = turtle.Turtle()
     setUp(tess, 100, "steelblue")
     nestedTriangle(tess, n)
+    turtle.done()                           # Keeps the graphics window open
 
 if __name__ == "__main__":
-     main()
-     
-     
+     main()     

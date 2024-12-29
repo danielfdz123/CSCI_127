@@ -5,7 +5,7 @@
 
 import pandas as pd
 
-file = input('Enter CSV file name: ')
+file = 'Parking_Violations_Jan_2016.csv'
 column = input("Enter column name: ")
 
 tickets = pd.read_csv(file)

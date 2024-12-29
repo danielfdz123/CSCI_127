@@ -1,7 +1,7 @@
 #Daniel Andres Fernandez
 #daniel.fernandez16@myhunter.cuny.edu
 #April 1, 2022
-#This program prints the month name with its corresponding number upon input
+#This program prints the month name with its corresponding number upon input using functions
      
 def monthString(monthNum):
     if monthNum == 1:
@@ -35,8 +35,6 @@ def main():
      n = int(input('Enter the number of the month: '))
      mString = monthString(n)
      print('The month is', mString)
-
-
 
 #Allow script to be run directly:
 if __name__ == "__main__":

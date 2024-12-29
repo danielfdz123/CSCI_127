@@ -3,19 +3,21 @@
 #March 6, 2022
 #This program outputs the total number of plural nouns
 
-gi = input("Enter nouns: ")
-word= gi.count(" ")
-word1= word + 1
-print("There are", word1, "words")
+nouns = input("Enter nouns: ")
+word = nouns.count(" ")
+total = word + 1
 
-word2= gi.count("s ")
+if total == 1:
+    print("There is", total, "word")
+else: 
+    print("There are", total, "words")
 
-for i in gi:
-    if gi[-1] == 's':
-        word3 = word2 + 1
-        fraction= word3 / word1
-        print("Fraction of your list that is plural:", fraction)
-    else:
-        fraction11 = words2 / words1
-        print("Fraction of your list that is plural:", fraction1)
-        
+plural = nouns.count("s ")
+
+if nouns[-1] == 's':
+    plural = plural + 1
+    fraction = plural / total
+    print("Fraction of your list that is plural:", fraction)
+else:
+    fraction = plural / total
+    print("Fraction of your list that is plural:", fraction)

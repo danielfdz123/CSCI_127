@@ -6,12 +6,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-num = int(input("Enter size: "))
-out = input("Enter output file: ")
+dimension = int(input("Enter size: "))
 
-img = np.zeros( (num,num,3) )
-img[::2,:,1:] = 0
+# Create an empty image (initialized to black)
+img = np.zeros((dimension, dimension, 3))
+
+# Set alternating rows to red (1, 0, 0)
+img[::2, :, 0] = 1  # Red rows
+
+# Set other rows to white (1, 1, 1)
+img[1::2, :, :] = 1  # White rows
 
 plt.imshow(img)
 plt.show()
-plt.imsave(out, img)
